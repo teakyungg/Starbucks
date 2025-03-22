@@ -1,0 +1,6 @@
+header {
+    /* 높이 */
+    --hight: 7.5rem;
+
+    height: var(--hight);
+}
