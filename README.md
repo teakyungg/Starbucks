@@ -1,1 +1,2 @@
-# Starbucks Resources
+메뉴바에 있는 메뉴 모두 수정하고
+나머지도 집어 넣기
