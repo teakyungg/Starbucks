@@ -9,24 +9,31 @@
     <body>
         <!-- Header -->
         <header>
-            <!-- 스타벅스 이미지 -->
-            <img src="./images/starbucks_logo.png" alt="스타벅스 로고" />
+            <div class="navigation">
+                <a class="logo" href="/" aria-label="스타벅스 로고"></a>
+                <nav class="menu">
+                    <ul class="main-menu">
+                        <li class="link-box"><a class="link" href="/">Sign In</a></li>
+                        <li class="link-box"><a class="link" href="/">Customer Service & Ideas</a></li>
+                        <li class="link-box"><a class="link" href="/">My Starbucks</a></li>
+                        <li class="link-box"><a class="link" href="/">Find a Store</a></li>
 
-            <!-- 최상단 네비창 -->
-            <nav>
-                <ul>
-                    <li class="link"><a href="/">Sign In</a></li>
-                    <li class="link"><a href="/">Customer Service & Ideas</a></li>
-                    <li class="link"><a href="/">My Starbucks</a></li>
-                    <li class="link"><a href="/">Find a Store</a></li>
-                    <li>
-                        <input type="search" />
-                    </li>
-                </ul>
-            </nav>
+                        <li class="input-search-box">
+                            <input class="input-search" type="search" placeholder="통합검색" />
+                            <div class="input-search-icon"></div>
+                        </li>
+                    </ul>
 
-            <!-- 상단 네비창 -->
-            <div>상단 네비창</div>
+                    <ul class="sub-menu">
+                        <li class="sub-big-box">
+                            <span class="sub-big-title">COFFEE</span>
+                            <div class="sub-small-box">sub-small-box</div>
+                        </li>
+                    </ul>
+
+                    <!-- 서브 메뉴 리스트 -->
+                </nav>
+            </div>
         </header>
     </body>
 </html>
