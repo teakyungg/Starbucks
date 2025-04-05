@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body{
+    height: 3000px;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -267,4 +271,19 @@ header {
 
 
 
+}
+
+/* aside */
+aside{
+    position: fixed;
+    right: 10px;
+    top: 130px;
+
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>*{
+        border-radius: 8px;
+    }
 }
