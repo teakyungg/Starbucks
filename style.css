@@ -283,7 +283,7 @@ aside{
     flex-direction: column;
     gap: 10px;
 
-    &>*{
+    *{
         border-radius: 8px;
     }
 }
