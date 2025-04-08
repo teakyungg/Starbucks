@@ -1,0 +1,27 @@
+#carousel{
+
+  
+    margin-top: 100px;
+    background-color: lightgreen;
+
+    height: 20px;
+   /*  overflow: hidden;  */
+
+    .box{
+
+        div{
+            border: 1px solid black;
+            width: 200px;
+            height: 20px;
+           
+            box-sizing: border-box;
+            text-align: center;
+        }
+    }
+    
+
+}
+
+button{
+    margin-top: 20px;
+}
