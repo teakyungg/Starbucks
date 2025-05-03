@@ -1,0 +1,14 @@
+aside{
+    position: fixed;
+    right: 10px;
+    top: 130px;
+
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+
+    *{
+        border-radius: 8px;
+    }
+}

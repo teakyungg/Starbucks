@@ -1,0 +1,39 @@
+.event {
+    height: 693px;
+    overflow: hidden;
+    position: relative;
+}
+
+.event>.slider {
+    position: absolute;
+
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0);
+}
+
+.event>.button {
+    position: absolute;
+    bottom: 30%;
+
+    width: 42px;
+    aspect-ratio: 1/1;
+    background: white;
+}
+
+.event>.left {
+    left: 50%;
+    margin-left: -500px;
+}
+
+.event>.right {
+    right: 50%;
+    margin-right: -500px;
+}
+
+/* carousel */
+.event>.event_carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}

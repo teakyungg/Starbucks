@@ -1,0 +1,111 @@
+.notice {
+    height: 62px;
+    display: flex;
+
+    /* 왼쪽 전체 */
+    .left {
+        width: 55%;
+        min-width: 660px;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* 공지 사항 내용 */
+    .notice-container {
+
+        display: flex;
+        width: 660px;
+
+        &>.title {
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &>.swiper {
+            flex: 1;
+
+            .swiper-wrapper {
+                margin-left: 20px;
+            }
+
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &>.plus {
+            width: 30px;
+            height: 30px;
+            background: white;
+            position: relative;
+            border-radius: 50%;
+            margin-top: 15px;
+            margin-right: 20px;
+
+            &>.w {
+                width: 15px;
+                height: 2px;
+                background: white;
+                background-color: rgb(51, 51, 51);
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                transform: translate(-50%, -50%);
+            }
+
+            &>.h {
+                width: 2px;
+                height: 15px;
+                background: white;
+                background-color: rgb(51, 51, 51);
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                transform: translate(-50%, -50%);
+            }
+
+
+        }
+    }
+
+    &>.right {
+
+        flex: 1;
+
+
+        &>.promotions {
+            width: 440px;
+            min-width: 440px;
+            height: 100%;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+
+            .title {
+                font-size: 17px;
+            }
+
+            .img {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url('../../assets/images/upload.png');
+            }
+
+        }
+
+    }
+
+}
