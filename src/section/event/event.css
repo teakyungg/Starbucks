@@ -2,38 +2,97 @@
     height: 693px;
     overflow: hidden;
     position: relative;
-}
+    background-color: rgb(246, 245, 239);
 
-.event>.slider {
-    position: absolute;
+    .swiper {
+        margin-top: 40px;
+        width: 100%;
+        overflow: visible;
+    }
 
-    left: 50%;
-    bottom: 50px;
-    transform: translate(-50%, 0);
-}
+    .swiper-slide {
+        width: auto;
+        flex-shrink: 0;
+    }
 
-.event>.button {
-    position: absolute;
-    bottom: 30%;
+    .swiper-button-prev {
+        position: absolute;
+        left: 50%;
+        margin-left: -500px;
+    }
 
-    width: 42px;
-    aspect-ratio: 1/1;
-    background: white;
-}
+    .swiper-button-next {
+        position: absolute;
+        right: 50%;
+        margin-right: -500px;
+    }
 
-.event>.left {
-    left: 50%;
-    margin-left: -500px;
-}
+    img {
+        transition: all 0.5s;
+    }
 
-.event>.right {
-    right: 50%;
-    margin-right: -500px;
-}
+    .show-more {
+        display: block;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        width: 106px;
+        color: rgb(51, 51, 51);
+        font-weight: 700;
 
-/* carousel */
-.event>.event_carousel {
-    display: flex;
-    overflow: hidden;
-    gap: 20px;
+        border: 2px solid rgb(51, 51, 51);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 42px;
+        aspect-ratio: 1/1;
+        border: 2px solid rgb(51, 51, 51);
+        border-radius: 50%;
+        transition: background-color 0.5s;
+
+        top: 280px;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: rgb(51, 51, 51);
+    }
+
+
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: none;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+        opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-image: url(../../assets/images/promotion_slide_pager_on.png);
+        background-size: cover;
+        background-color: white;
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    .arrow {
+        transform: scale(0.6);
+        fill: rgb(51, 51, 51);
+        transition: fill 0.5s;
+    }
+
+    .arrow:hover {
+        fill: rgb(255, 255, 255);
+    }
+
+
 }
