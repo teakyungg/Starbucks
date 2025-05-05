@@ -1,0 +1,88 @@
+.reward {
+    height: 241px;
+
+    display: flex;
+
+    .side {
+        flex: 1;
+    }
+
+    .left {
+        background-color: rgb(39, 39, 39);
+    }
+
+    .right {
+        background-color: rgb(213, 199, 152);
+    }
+
+}
+
+.reward_box {
+    background-image: url(../../assets/images/rewards.jpg);
+    background-repeat: no-repeat;
+
+    width: 1100px;
+    height: 100%;
+    position: relative;
+
+    .auth-links {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+
+        width: 250px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .link {
+        display: inline-block;
+        color: rgb(39, 39, 39);
+        text-align: center;
+        border-radius: 5px;
+
+        box-sizing: border-box;
+        padding: 10px;
+        height: 42px;
+        border: 2px solid rgb(39, 39, 39);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        transition: all 0.4s;
+    }
+
+    .sign_up {
+        width: 126px;
+        background-color: rgb(39, 39, 39);
+        color: white;
+    }
+
+    .sign_up:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(39, 39, 39);
+    }
+
+
+
+    .login {
+        flex: 1;
+    }
+
+    .gift {
+        width: 100%;
+    }
+
+
+    .login:hover,
+    .gift:hover {
+        background-color: rgb(39, 39, 39);
+        color: white;
+    }
+
+
+
+}

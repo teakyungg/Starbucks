@@ -1,0 +1,10 @@
+.promotion_click {
+    position: relative;
+    transition: bottom 0.5s ease-out;
+    bottom: 0;
+    z-index: 1;
+}
+
+.promotion_move {
+    bottom: 693px;
+}

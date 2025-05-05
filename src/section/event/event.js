@@ -12,9 +12,13 @@ const event_swiper = new Swiper('.event > .swiper', {
     loop: true,
     speed: 500,
     centeredSlides: true,
-    /*  slidesPerView: 2.3, */
     slidesPerView: 'auto',
     spaceBetween: 20,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
 
     on: {
         init: function () {
@@ -22,9 +26,10 @@ const event_swiper = new Swiper('.event > .swiper', {
             opacity();
         },
 
-        slideChangeTransitionEnd: function () {
+        slideChangeTransitionStart: function () {
             opacity();
-        }
+        },
+
     },
 
     // If we need pagination
@@ -54,8 +59,6 @@ function opacity() {
 
     let targets = document.querySelectorAll('.event .swiper-slide-prev img, .event .swiper-slide-next img');
     let activeSlide = document.querySelector('.event .swiper-slide-active img');
-
-    console
 
     targets.forEach(element => {
         element.style.opacity = '0.5';
