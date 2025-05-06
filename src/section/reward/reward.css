@@ -22,6 +22,7 @@
     background-repeat: no-repeat;
 
     width: 1100px;
+    min-width: 1100px;
     height: 100%;
     position: relative;
 
@@ -52,7 +53,7 @@
         align-items: center;
         justify-content: center;
         font-weight: 700;
-        transition: all 0.4s;
+        /*  transition: background-color 0.4s, color 0.4s; */
     }
 
     .sign_up {
@@ -64,6 +65,7 @@
     .sign_up:hover {
         background-color: rgba(255, 255, 255, 0);
         color: rgb(39, 39, 39);
+        transition: background-color 0.4s, color 0.4s;
     }
 
 
@@ -81,6 +83,7 @@
     .gift:hover {
         background-color: rgb(39, 39, 39);
         color: white;
+        transition: background-color 0.4s, color 0.4s;
     }
 
 

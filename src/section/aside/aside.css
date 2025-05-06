@@ -1,4 +1,4 @@
-aside{
+aside {
     position: fixed;
     right: 10px;
     top: 130px;
@@ -6,9 +6,9 @@ aside{
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 9999;
+    z-index: 999;
 
-    *{
+    * {
         border-radius: 8px;
     }
 }

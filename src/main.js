@@ -6,6 +6,7 @@ import './section/aside/aside.css';
 import './section/event/event.css';
 import './section/promotion_click/promotion_click.css';
 import './section/reward/reward.css';
+import './section/pick_favorite/pick_favorite.css';
 
 import './section/inner-img/inner-img.js';
 import './section/aside/aside.js';
@@ -13,3 +14,4 @@ import './section/notice/left_notice.js';
 import './section/event/event.js';
 import './section/promotion_click/promotion_click.js';
 import './section/reward/reward.js';
+import './section/pick_favorite/pick_favorite.js';
