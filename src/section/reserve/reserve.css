@@ -1,0 +1,64 @@
+.reserve {
+    height: 600px;
+    background-image: url('/src/assets/images/reserve_store_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .inner {
+        width: 1100px;
+        height: 100%;
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .box {
+        width: 334px;
+        aspect-ratio: 1/1;
+        perspective: 800px;
+
+        &:hover {
+
+            .front {
+                transform: rotateY(180deg);
+            }
+
+            .end {
+                transform: rotateY(0);
+            }
+
+        }
+
+
+    }
+
+    .end {
+        transform: rotateY(-180deg);
+    }
+
+    .front,
+    .end {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    .add_button {
+        position: absolute;
+
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%, 0);
+
+        padding: 10px 30px;
+        border: 2px solid rgb(51, 51, 51);
+        border-radius: 5px;
+
+        color: rgb(51, 51, 51);
+        font-weight: 700;
+    }
+
+}
