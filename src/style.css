@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 3000px;
+    position: relative;
 }
 
 .sr-only {

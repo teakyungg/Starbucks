@@ -8,6 +8,10 @@ import './section/promotion_click/promotion_click.css';
 import './section/reward/reward.css';
 import './section/pick_favorite/pick_favorite.css';
 import './section/reserve/reserve.css';
+import './section/near_starbucks/near_starbucks.css';
+import './section/season-menu/season-menu.css';
+import './section/reserve_coffee/reserve_coffee.css';
+import './section/up_button/up_button.css';
 
 import './section/inner-img/inner-img.js';
 import './section/aside/aside.js';
@@ -17,3 +21,7 @@ import './section/promotion_click/promotion_click.js';
 import './section/reward/reward.js';
 import './section/pick_favorite/pick_favorite.js';
 import './section/reserve/reserve.js'
+import './section/near_starbucks/near_starbucks.js';
+import './section/season-menu/season-menu.js';
+import './section/reserve_coffee/reserve_coffee.js';
+import './section/up_button/up_button.js';
