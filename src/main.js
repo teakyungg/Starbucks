@@ -1,27 +1,8 @@
-import './style.css';
-import './section/header/header.css';
-import './section/inner-img/inner-img.css';
-import './section/notice/notice.css';
-import './section/aside/aside.css';
-import './section/event/event.css';
-import './section/promotion_click/promotion_click.css';
-import './section/reward/reward.css';
-import './section/pick_favorite/pick_favorite.css';
-import './section/reserve/reserve.css';
-import './section/near_starbucks/near_starbucks.css';
-import './section/season-menu/season-menu.css';
-import './section/reserve_coffee/reserve_coffee.css';
-import './section/up_button/up_button.css';
+import './style.css'
+import.meta.glob('./section/**/*.css', { eager: true });
 
-import './section/inner-img/inner-img.js';
-import './section/aside/aside.js';
-import './section/notice/left_notice.js';
-import './section/event/event.js';
-import './section/promotion_click/promotion_click.js';
-import './section/reward/reward.js';
-import './section/pick_favorite/pick_favorite.js';
-import './section/reserve/reserve.js'
-import './section/near_starbucks/near_starbucks.js';
-import './section/season-menu/season-menu.js';
-import './section/reserve_coffee/reserve_coffee.js';
-import './section/up_button/up_button.js';
+const jsModules = import.meta.glob('./section/**/*.js');
+
+for (const path in jsModules) {
+    jsModules[path]();
+}

@@ -43,7 +43,6 @@
         .small_img {
             width: 216px;
             aspect-ratio: 1/1;
-            background-color: lightcoral;
             border-radius: 50%;
 
             position: absolute;

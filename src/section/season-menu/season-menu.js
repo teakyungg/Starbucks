@@ -22,6 +22,7 @@ elements.forEach((item, index) => {
         toggleActions: 'play reverse play reverse',
 
         onEnter: () => {
+
             gsap.to(item, {
                 x: `${dir(index)}`,
                 opacity: 1,
@@ -45,6 +46,21 @@ function dir(index) {
     else return -100;
 }
 
+
+// 위에 이미지 요소
+let imgs = parents.querySelectorAll('.img > img');
+imgs = Array.from(imgs);
+
+imgs.forEach((item, index) => {
+    gsap.to(item, {
+        y: 10,
+        duration: 1.5,
+        delay: index,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    })
+});
 
 
 
