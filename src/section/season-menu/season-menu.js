@@ -6,6 +6,24 @@ gsap.registerPlugin(ScrollTrigger);
 const parents = document.querySelector('.season-menu');
 let elements = Array.from(parents.querySelectorAll('.inner > *[class*=ani]'));
 
+const notic_button = document.querySelector('.notice .img');
+let triggers = [];
+
+notic_button.addEventListener('click', () => {
+
+    setTimeout(() => {
+
+        triggers.forEach((item) => {
+            item.vars.start = 'top 70%';
+            item.refresh();
+        });
+
+    }, 600);
+
+});
+
+
+
 // 투명도 초기화
 elements.forEach((item) => {
     gsap.set(item, {
@@ -13,12 +31,13 @@ elements.forEach((item) => {
     });
 });
 
+
 // 요소 움직임
 elements.forEach((item, index) => {
 
-    ScrollTrigger.create({
+    const trigger = ScrollTrigger.create({
         trigger: parents,
-        start: 'top 70%',
+        start: `top 70%`,
         toggleActions: 'play reverse play reverse',
 
         onEnter: () => {
@@ -38,7 +57,11 @@ elements.forEach((item, index) => {
         }
     });
 
+    triggers.push(trigger);
+
 });
+
+
 
 // 좌우 이동 계산
 function dir(index) {
