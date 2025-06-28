@@ -10,6 +10,7 @@
         color: white;
         display: flex;
         justify-content: flex-end;
+        
     }
 
     /* 공지 사항 내용 */
@@ -47,9 +48,8 @@
             margin-top: 15px;
             margin-right: 20px;
 
-            &>.w {
-                width: 15px;
-                height: 2px;
+            &>.w,
+            &>.h{
                 background: white;
                 background-color: rgb(51, 51, 51);
 
@@ -60,17 +60,15 @@
                 transform: translate(-50%, -50%);
             }
 
+            &>.w {
+                width: 15px;
+                height: 2px;
+                
+            }
+
             &>.h {
                 width: 2px;
                 height: 15px;
-                background: white;
-                background-color: rgb(51, 51, 51);
-
-                position: absolute;
-                top: 50%;
-                left: 50%;
-
-                transform: translate(-50%, -50%);
             }
 
 

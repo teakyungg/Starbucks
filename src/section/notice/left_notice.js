@@ -1,10 +1,6 @@
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 const notice_swiper = new Swiper('.notice > .left .swiper', {
 
     modules: [Autoplay],
@@ -15,22 +11,6 @@ const notice_swiper = new Swiper('.notice > .left .swiper', {
     autoplay: {
         delay: 2000,
         disableOnInteraction: false,
-    },
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
     },
 
 });
