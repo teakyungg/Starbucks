@@ -17,4 +17,5 @@ for(let i=1;i<=fade.length;i++){
         }
     
     },1000 * i)
+    
 }
