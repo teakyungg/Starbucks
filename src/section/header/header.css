@@ -27,7 +27,7 @@ header {
         .menu {
             width: 70%;
 
-            .main-menu {
+            .sub-menu {
                 display: flex;
                 align-items: center;
                 float: right;
@@ -51,15 +51,11 @@ header {
                         content: none;
                     }
 
-
-                }
-
-                .link {
+                    &>.link {
                     display: inline-block;
                     color: rgb(101, 101, 101);
                     font-size: 13px;
                     font-weight: 400;
-
 
                     &:hover {
                         color: black;
@@ -67,7 +63,10 @@ header {
 
                 }
 
-                .input {
+
+                }
+
+                &>.input {
                     position: relative;
                     margin-left: 15px;
 
@@ -126,7 +125,7 @@ header {
 
             }
 
-            .sub-menu {
+            .main-menu {
                 float: right;
                 width: 750px;
                 margin-top: 24px;
@@ -153,26 +152,26 @@ header {
                         left: 0;
                         display: none;
 
-                        .contents {
+                        &>.contents {
                             margin: auto;
                             width: 1100px;
                             padding: 20px 0;
                             display: flex;
                             gap: 80px;
 
-                            .contents-list {
+                            &>.contents-list {
                                 display: flex;
                                 flex-direction: column;
                                 padding: 10px;
 
-                                .contents-title {
+                                &>.contents-title {
                                     display: inline-block;
                                     padding-bottom: 10px;
                                     font-size: 14px;
                                     color: white;
                                 }
 
-                                .contents-list {
+                                .list {
                                     padding: 5px 0;
                                     font-size: 12px;
                                     color: rgb(153, 153, 153);
@@ -238,7 +237,6 @@ header {
                     }
                 }
             }
-
 
 
         }
