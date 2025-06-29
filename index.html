@@ -499,12 +499,14 @@
 
         <div class="swiper">
 
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">크리스마스 & 연말연시 매장 영업시간 변경 안내</div>
-            <div class="swiper-slide">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</div>
-            <div class="swiper-slide">스타벅스 코리아 애플리케이션 버전 업데이트 안내</div>
-            <div class="swiper-slide">[당첨자 발표]뉴이어 전자영수증 이벤트</div>
-          </div>
+          <ul class="swiper-wrapper">
+
+            <li class="swiper-slide">크리스마스 & 연말연시 매장 영업시간 변경 안내</li>
+            <li class="swiper-slide">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</li>
+            <li class="swiper-slide">스타벅스 코리아 애플리케이션 버전 업데이트 안내</li>
+            <li class="swiper-slide">[당첨자 발표]뉴이어 전자영수증 이벤트</li>
+
+          </ul>
 
         </div>
 
@@ -534,53 +536,68 @@
 
     <h2 class="sr-only">스타벅스 이벤트</h2>
 
+    <!-- swiper 전체 박스 -->
     <div class="swiper">
 
-      <div class="swiper-wrapper">
+      <!-- swiper -->
+      <section class="swiper-wrapper">
 
-        <div class="swiper-slide">
+        <h3 class="sr-only">스타벅스 이벤트 목록</h3>
+
+        <!-- swiper 각각 요소 -->
+        <figure class="swiper-slide">
           <img src="/src/assets/images/promotion_slide1.jpg" alt="스타벅스 2017 뉴 이어 이벤트" />
           <a class="show-more" href="#">자세히 보기</a>
-        </div>
+        </figure>
 
-        <div class="swiper-slide">
+        <!-- swiper 각각 요소 -->
+        <figure class="swiper-slide">
           <img src="/src/assets/images/promotion_slide2.jpg" alt="스타벅스 아메리카노 e-쿠폰" />
           <a class="show-more" href="#">자세히 보기</a>
-        </div>
+        </figure>
 
-        <div class="swiper-slide">
+        <!-- swiper 각각 요소 -->
+        <figure class="swiper-slide">
           <img src="/src/assets/images/promotion_slide3.jpg" alt="스타벅스 뉴이어 음료BOGO(1+1) 쿠폰" />
           <a class="show-more" href="#">자세히 보기</a>
-        </div>
+        </figure>
 
-        <div class="swiper-slide">
+        <!-- swiper 각각 요소 -->
+        <figure class="swiper-slide">
           <img src="/src/assets/images/promotion_slide4.jpg" alt="스타벅스 아메리카노(톨사이즈) 쿠폰" />
           <a class="show-more" href="#">자세히 보기</a>
-        </div>
+        </figure>
 
-        <div class="swiper-slide">
+        <!-- swiper 각각 요소 -->
+        <figure class="swiper-slide">
           <img src="/src/assets/images/promotion_slide5.jpg" alt="스타벅스 추첨" />
           <a class="show-more" href="#">자세히 보기</a>
-        </div>
+        </figure>
 
-      </div>
+      </section>
 
+      <!-- swiper 페이지네이션 -->
       <div class="swiper-pagination"></div>
 
-      <div class="swiper-button-prev">
+      <!-- swiper 오른쪽 버튼 -->
+      <button class="swiper-button-prev">
+
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
           <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
         </svg>
-      </div>
 
-      <div class="swiper-button-next">
+      </button>
+
+      <!-- swiper 왼쪽 버튼 -->
+      <button class="swiper-button-next">
+
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
           <path d=" M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
         </svg>
-      </div>
+        
+      </button>
 
     </div>
-
 
   </section>
 

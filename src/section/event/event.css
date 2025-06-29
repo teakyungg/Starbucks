@@ -12,7 +12,6 @@
 
     .swiper-slide {
         width: auto;
-        flex-shrink: 0;
     }
 
     .swiper-button-prev {
@@ -34,6 +33,7 @@
     .show-more {
         display: block;
         margin: auto;
+
         text-align: center;
         position: relative;
         bottom: 50px;
