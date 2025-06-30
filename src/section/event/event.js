@@ -22,7 +22,6 @@ const event_swiper = new Swiper('.event > .swiper', {
 
     on: {
         init: function () {
-            reset();
             opacity();
         },
 
@@ -43,17 +42,7 @@ const event_swiper = new Swiper('.event > .swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-
 });
-
-function reset() {
-    const pagination = document.querySelector('.event .swiper-pagination');
-    pagination.style.bottom = '-5px';
-}
 
 function opacity() {
 
