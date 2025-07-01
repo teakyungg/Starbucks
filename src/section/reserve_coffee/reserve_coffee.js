@@ -3,7 +3,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const parents = document.querySelector('.reserve_coffee');
+const parents = document.querySelector('.reserve-coffee');
 let elements = Array.from(parents.querySelectorAll('.inner > *[class*=ani]'));
 
 const notic_button = document.querySelector('.notice .img');

@@ -7,7 +7,9 @@
     .video {
 
         display: block;
-        width: 1920px;
+        /* width: 1920px; */
+        width: 100%; 
+        
         aspect-ratio: 16/9;
         pointer-events: none;
 
