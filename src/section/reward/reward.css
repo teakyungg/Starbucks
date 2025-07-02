@@ -39,7 +39,6 @@
     }
 
     .link {
-        display: inline-block;
         color: rgb(39, 39, 39);
         text-align: center;
         border-radius: 5px;
@@ -53,7 +52,6 @@
         align-items: center;
         justify-content: center;
         font-weight: 700;
-        /*  transition: background-color 0.4s, color 0.4s; */
     }
 
     .sign_up {
