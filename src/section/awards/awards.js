@@ -1,9 +1,6 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 const event_swiper = new Swiper('.awards > .swiper', {
 
@@ -13,7 +10,7 @@ const event_swiper = new Swiper('.awards > .swiper', {
     speed: 500,
     centeredSlides: true,
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 20,   
     slidesPerView: 5,
 
     autoplay: {
@@ -21,16 +18,12 @@ const event_swiper = new Swiper('.awards > .swiper', {
         disableOnInteraction: true,
     },
 
-    // Navigation arrows
+    
     navigation: {
         nextEl: '.awards .swiper-button-next',
         prevEl: '.awards .swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
 
 });
 
