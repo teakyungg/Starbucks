@@ -17,7 +17,7 @@
 
 }
 
-.reward_box {
+.reward-box {
     background-image: url(../../assets/images/rewards.jpg);
     background-repeat: no-repeat;
 
@@ -54,13 +54,13 @@
         font-weight: 700;
     }
 
-    .sign_up {
+    .sign-up {
         width: 126px;
         background-color: rgb(39, 39, 39);
         color: white;
     }
 
-    .sign_up:hover {
+    .sign-up:hover {
         background-color: rgba(255, 255, 255, 0);
         color: rgb(39, 39, 39);
         transition: background-color 0.4s, color 0.4s;
