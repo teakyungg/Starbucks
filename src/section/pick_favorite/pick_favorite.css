@@ -28,7 +28,7 @@
         bottom: 200px;
     }
 
-    .add_button {
+    .add-button {
         margin-top: 40px;
         position: absolute;
         right: 0;
@@ -43,9 +43,10 @@
         border-radius: 5px;
         font-weight: 700;
         text-align: center;
+        color: white;
 
         a {
-            color: white;
+            text-decoration: none;
         }
 
     }
