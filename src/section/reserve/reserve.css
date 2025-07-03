@@ -44,6 +44,7 @@
     .end {
         position: absolute;
         backface-visibility: hidden;
+        transition: transform 0.7s;
     }
 
     .add_button {

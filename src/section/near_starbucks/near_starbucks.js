@@ -3,7 +3,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const parents = document.querySelector('.near_starbucks');
+const parents = document.querySelector('.near-starbucks');
 let elements = Array.from(parents.querySelectorAll('.inner > *[class*=ani]'));
 
 
