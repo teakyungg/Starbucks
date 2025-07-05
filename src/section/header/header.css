@@ -1,20 +1,27 @@
 header {
-    border-bottom: 1px solid rgb(200, 200, 200);
+    border-bottom: .0625rem solid rgb(200, 200, 200);
     background-color: rgb(246, 245, 240);
 
     position: fixed;
-    width: 100vw;
+    width: 100%; 
     z-index: 1000;
 
     /* 네비게이션 요소 */
     .navigation {
-        width: 68.75rem;
-        height: 7.5rem;
+        max-width: 1100px;
+        height: 120px;
+        padding: 0 20px;
 
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 1100px) {
+            width: auto;
+            min-width: 850px;
+
+        }
 
         .logo {
             width: 75px;
@@ -106,15 +113,15 @@ header {
                             background-image: url(/src/assets/images/search-icon.png);
                             position: absolute;
 
-                            width: 20px;
+                            width: 1.25rem;
                             aspect-ratio: 1/1;
 
                             background-size: cover;
                             background-position: center;
 
                             pointer-events: none;
-                            top: 7px;
-                            right: 7px;
+                            top: .4375rem;
+                            right: .4375rem;
 
                             transition: opacity 0.5s;
                         }
@@ -127,19 +134,19 @@ header {
 
                 .main-menu {
                     float: right;
-                    width: 750px;
-                    margin-top: 24px;
+                    width: 46.875rem;
+                    margin-top: 1.5rem;
                     display: flex;
                     justify-content: flex-end;
 
                     &>.item {
-                        padding: 20px;
-                        border-radius: 8px 8px 0 0;
+                        padding: 1.25rem;
+                        border-radius: .5rem .5rem 0 0;
 
                         &>.title {
                             position: relative;
-                            bottom: 10px;
-                            font-size: 13px;
+                            bottom: .625rem;
+                            font-size: .8125rem;
                         }
 
                         &>.item-contents {
@@ -148,32 +155,32 @@ header {
 
                             width: 100%;
 
-                            top: 120px;
+                            top: 7.5rem;
                             left: 0;
                             display: none;
 
                             &>.contents {
                                 margin: auto;
-                                width: 1100px;
-                                padding: 20px 0;
+                                width: 68.75rem;
+                                padding: 1.25rem 0;
                                 display: flex;
-                                gap: 80px;
+                                gap: 5rem;
 
                                 &>.contents-list {
                                     display: flex;
                                     flex-direction: column;
-                                    padding: 10px;
+                                    padding: .625rem;
 
                                     &>.contents-title {
                                         display: inline-block;
-                                        padding-bottom: 10px;
-                                        font-size: 14px;
+                                        padding-bottom: .625rem;
+                                        font-size: .875rem;
                                         color: white;
                                     }
 
                                     .list {
-                                        padding: 5px 0;
-                                        font-size: 12px;
+                                        padding: .3125rem 0;
+                                        font-size: .75rem;
                                         color: rgb(153, 153, 153);
 
                                         a {
@@ -191,19 +198,19 @@ header {
 
                             .tip {
                                 margin: auto;
-                                padding: 20px 0;
-                                padding-bottom: 40px;
+                                padding: 1.25rem 0;
+                                padding-bottom: 2.5rem;
 
                                 background-image: url(/src/assets/images/main_menu_pattern.jpg);
 
                                 &>.item {
-                                    width: 1100px;
+                                    width: 68.75rem;
                                     margin: auto;
 
                                     display: flex;
                                     flex-direction: column;
-                                    gap: 10px;
-                                    font-size: 12px;
+                                    gap: .625rem;
+                                    font-size: .75rem;
 
                                     .tip-title {
                                         color: #999999;
