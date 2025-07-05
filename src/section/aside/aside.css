@@ -3,7 +3,7 @@ aside {
     right: 10px;
     top: 130px;
 
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     z-index: 999;

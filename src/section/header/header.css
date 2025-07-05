@@ -27,216 +27,216 @@ header {
         .menu {
             width: 70%;
 
-            .sub-menu {
-                display: flex;
-                align-items: center;
-                float: right;
+                .sub-menu {
+                    display: flex;
+                    align-items: center;
+                    float: right;
 
-                position: relative;
-                top: 10px;
-
-                &>.item {
-
-                    &>.title {
-                        font-size: 13px;
-                    }
-
-                    &::after {
-                        content: '|';
-                        color: #e5e5e5;
-                        margin: 0 10px;
-                    }
-
-                    &:nth-child(4)::after {
-                        content: none;
-                    }
-
-                    &>.link {
-                    display: inline-block;
-                    color: rgb(101, 101, 101);
-                    font-size: 13px;
-                    font-weight: 400;
-
-                    &:hover {
-                        color: black;
-                    }
-
-                }
-
-
-                }
-
-                &>.input {
                     position: relative;
-                    margin-left: 15px;
+                    top: 10px;
 
+                    &>.item {
 
-                    .search {
-                        width: 36px;
-                        height: 34px;
-
-                        border: 1px solid black;
-                        border-color: rgb(204, 204, 204);
-                        border-radius: 8px;
-
-                        transition: all 0.5s;
-
-                        &::placeholder {
-                            font-size: 0px;
+                        &>.title {
+                            font-size: 13px;
                         }
 
-                        &:focus {
-                            width: 180px;
-                            padding: 5px;
-                            outline: none;
-                            border: 1px solid green;
+                        &::after {
+                            content: '|';
+                            color: #e5e5e5;
+                            margin: 0 10px;
+                        }
 
-                            &~.icon {
-                                opacity: 0;
-                            }
+                        &:nth-child(4)::after {
+                            content: none;
+                        }
+
+                        &>.link {
+                        display: inline-block;
+                        color: rgb(101, 101, 101);
+                        font-size: 13px;
+                        font-weight: 400;
+
+                        &:hover {
+                            color: black;
+                        }
+
+                    }
+
+
+                    }
+
+                    &>.input {
+                        position: relative;
+                        margin-left: 15px;
+
+
+                        .search {
+                            width: 36px;
+                            height: 34px;
+
+                            border: 1px solid black;
+                            border-color: rgb(204, 204, 204);
+                            border-radius: 8px;
+
+                            transition: all 0.5s;
 
                             &::placeholder {
-                                font-size: 12.8px;
+                                font-size: 0px;
                             }
 
+                            &:focus {
+                                width: 180px;
+                                padding: 5px;
+                                outline: none;
+                                border: 1px solid green;
+
+                                &~.icon {
+                                    opacity: 0;
+                                }
+
+                                &::placeholder {
+                                    font-size: 12.8px;
+                                }
+
+                            }
                         }
+
+                        .icon {
+                            background-image: url(/src/assets/images/search-icon.png);
+                            position: absolute;
+
+                            width: 20px;
+                            aspect-ratio: 1/1;
+
+                            background-size: cover;
+                            background-position: center;
+
+                            pointer-events: none;
+                            top: 7px;
+                            right: 7px;
+
+                            transition: opacity 0.5s;
+                        }
+
                     }
 
-                    .icon {
-                        background-image: url(/src/assets/images/search-icon.png);
-                        position: absolute;
 
-                        width: 20px;
-                        aspect-ratio: 1/1;
-
-                        background-size: cover;
-                        background-position: center;
-
-                        pointer-events: none;
-                        top: 7px;
-                        right: 7px;
-
-                        transition: opacity 0.5s;
-                    }
 
                 }
 
+                .main-menu {
+                    float: right;
+                    width: 750px;
+                    margin-top: 24px;
+                    display: flex;
+                    justify-content: flex-end;
 
+                    &>.item {
+                        padding: 20px;
+                        border-radius: 8px 8px 0 0;
 
-            }
-
-            .main-menu {
-                float: right;
-                width: 750px;
-                margin-top: 24px;
-                display: flex;
-                justify-content: flex-end;
-
-                &>.item {
-                    padding: 20px;
-                    border-radius: 8px 8px 0 0;
-
-                    &>.title {
-                        position: relative;
-                        bottom: 10px;
-                        font-size: 13px;
-                    }
-
-                    &>.item-contents {
-                        position: absolute;
-                        background-color: #333333;
-
-                        width: 100%;
-
-                        top: 120px;
-                        left: 0;
-                        display: none;
-
-                        &>.contents {
-                            margin: auto;
-                            width: 1100px;
-                            padding: 20px 0;
-                            display: flex;
-                            gap: 80px;
-
-                            &>.contents-list {
-                                display: flex;
-                                flex-direction: column;
-                                padding: 10px;
-
-                                &>.contents-title {
-                                    display: inline-block;
-                                    padding-bottom: 10px;
-                                    font-size: 14px;
-                                    color: white;
-                                }
-
-                                .list {
-                                    padding: 5px 0;
-                                    font-size: 12px;
-                                    color: rgb(153, 153, 153);
-
-                                    a {
-                                        color: inherit;
-                                    }
-
-                                    &:hover {
-                                        color: rgb(102, 153, 0);
-                                    }
-                                }
-
-                            }
-
+                        &>.title {
+                            position: relative;
+                            bottom: 10px;
+                            font-size: 13px;
                         }
 
-                        .tip {
-                            margin: auto;
-                            padding: 20px 0;
-                            padding-bottom: 40px;
+                        &>.item-contents {
+                            position: absolute;
+                            background-color: #333333;
 
-                            background-image: url(/src/assets/images/main_menu_pattern.jpg);
+                            width: 100%;
 
-                            &>.item {
-                                width: 1100px;
+                            top: 120px;
+                            left: 0;
+                            display: none;
+
+                            &>.contents {
                                 margin: auto;
-
+                                width: 1100px;
+                                padding: 20px 0;
                                 display: flex;
-                                flex-direction: column;
-                                gap: 10px;
-                                font-size: 12px;
+                                gap: 80px;
 
-                                .tip-title {
-                                    color: #999999;
-                                    font-size: inherit;
+                                &>.contents-list {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 10px;
+
+                                    &>.contents-title {
+                                        display: inline-block;
+                                        padding-bottom: 10px;
+                                        font-size: 14px;
+                                        color: white;
+                                    }
+
+                                    .list {
+                                        padding: 5px 0;
+                                        font-size: 12px;
+                                        color: rgb(153, 153, 153);
+
+                                        a {
+                                            color: inherit;
+                                        }
+
+                                        &:hover {
+                                            color: rgb(102, 153, 0);
+                                        }
+                                    }
+
                                 }
 
-                                .tip-sub {
-                                    color: #669900;
-                                    font-size: inherit;
+                            }
+
+                            .tip {
+                                margin: auto;
+                                padding: 20px 0;
+                                padding-bottom: 40px;
+
+                                background-image: url(/src/assets/images/main_menu_pattern.jpg);
+
+                                &>.item {
+                                    width: 1100px;
+                                    margin: auto;
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    font-size: 12px;
+
+                                    .tip-title {
+                                        color: #999999;
+                                        font-size: inherit;
+                                    }
+
+                                    .tip-sub {
+                                        color: #669900;
+                                        font-size: inherit;
+                                    }
                                 }
+
+                            }
+
+
+
+
+                        }
+
+                        &:hover {
+                            background-color: #333333;
+
+                            .title {
+                                color: #669900;
+                            }
+
+                            .item-contents {
+                                display: block;
                             }
 
                         }
-
-
-
-
-                    }
-
-                    &:hover {
-                        background-color: #333333;
-
-                        .title {
-                            color: #669900;
-                        }
-
-                        .item-contents {
-                            display: block;
-                        }
-
                     }
                 }
-            }
 
 
         }

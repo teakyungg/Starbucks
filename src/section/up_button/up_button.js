@@ -1,4 +1,4 @@
-const up_button = document.querySelector('#up_button');
+const up_button = document.querySelector('#up-button');
 let side_max_height = document.body.scrollHeight * (30 / 100); /* 전체 높이의 30% */
 
 window.addEventListener('scroll', () => {
