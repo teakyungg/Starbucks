@@ -17,7 +17,6 @@ notic_button.addEventListener('click', () => {
     setTimeout(() => {
 
         triggers.forEach((item) => {
-            item.vars.start = 'top 70%';
             item.refresh();
         });
 
