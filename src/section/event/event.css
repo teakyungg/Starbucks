@@ -17,13 +17,21 @@
     .swiper-button-prev {
         position: absolute;
         left: 50%;
-        margin-left: -500px;
+        margin-left: -30%; 
+
+        @media (max-width: 900px) {
+           display: none;
+        }
     }
 
     .swiper-button-next {
         position: absolute;
-        right: 50%;
-        margin-right: -500px;
+        right : 50%;
+        margin-right: -30%;
+
+        @media (max-width: 900px) {
+           display: none;
+        }
     }
 
     img {
