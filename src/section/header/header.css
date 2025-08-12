@@ -1,5 +1,5 @@
 header {
-    border-bottom: .0625rem solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
     background-color: rgb(246, 245, 240);
 
     position: fixed;
@@ -7,249 +7,229 @@ header {
     z-index: 1000;
 
     /* 네비게이션 요소 */
-    .navigation {
-        max-width: 1100px;
-        height: 120px;
-        padding: 0 20px;
+    nav{
+        max-width: 68.75rem;
+        height: 7.5rem;
+        padding: 0 1.25rem;
 
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: 1100px) {
+        @media (max-width: 68.75rem) {
             width: auto;
-            min-width: 850px;
-
+            min-width: 53.125rem;
         }
 
         .logo {
-            width: 75px;
+            width: 4.6875rem;
             aspect-ratio: 1/1;
 
             background-image: url(/src/assets/images/starbucks_logo.png);
             background-size: cover;
         }
 
-        .menu {
-            width: 70%;
+        .sub-menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            position: relative;
+            top: .625rem;
 
-                .sub-menu {
-                    display: flex;
-                    align-items: center;
-                    float: right;
+            .item {
 
-                    position: relative;
-                    top: 10px;
+                font-size: .8125rem;
 
-                    &>.item {
+                &::after {
+                    content: '|';
+                    color: #e5e5e5;
+                    margin: 0 .625rem;
+                }
 
-                        &>.title {
-                            font-size: 13px;
-                        }
+                &:nth-last-child(2)::after {
+                    content: none;
+                }
 
-                        &::after {
-                            content: '|';
-                            color: #e5e5e5;
-                            margin: 0 10px;
-                        }
+                &>.link {
+                display: inline-block;
+                color: rgb(101, 101, 101);
+                font-size: .8125rem;
+                font-weight: 400;
 
-                        &:nth-child(4)::after {
-                            content: none;
-                        }
-
-                        &>.link {
-                        display: inline-block;
-                        color: rgb(101, 101, 101);
-                        font-size: 13px;
-                        font-weight: 400;
-
-                        &:hover {
-                            color: black;
-                        }
-
-                    }
-
-
-                    }
-
-                    &>.input {
-                        position: relative;
-                        margin-left: 15px;
-
-
-                        .search {
-                            width: 36px;
-                            height: 34px;
-
-                            border: 1px solid black;
-                            border-color: rgb(204, 204, 204);
-                            border-radius: 8px;
-
-                            transition: all 0.5s;
-
-                            &::placeholder {
-                                font-size: 0px;
-                            }
-
-                            &:focus {
-                                width: 180px;
-                                padding: 5px;
-                                outline: none;
-                                border: 1px solid green;
-
-                                &~.icon {
-                                    opacity: 0;
-                                }
-
-                                &::placeholder {
-                                    font-size: 12.8px;
-                                }
-
-                            }
-                        }
-
-                        .icon {
-                            background-image: url(/src/assets/images/search-icon.png);
-                            position: absolute;
-
-                            width: 1.25rem;
-                            aspect-ratio: 1/1;
-
-                            background-size: cover;
-                            background-position: center;
-
-                            pointer-events: none;
-                            top: .4375rem;
-                            right: .4375rem;
-
-                            transition: opacity 0.5s;
-                        }
-
-                    }
-
-
+                &:hover {
+                    color: black;
+                }
 
                 }
 
-                .main-menu {
-                    float: right;
-                    width: 46.875rem;
-                    margin-top: 1.5rem;
-                    display: flex;
-                    justify-content: flex-end;
+            }
 
-                    &>.item {
-                        padding: 1.25rem;
-                        border-radius: .5rem .5rem 0 0;
+            .input {
+                position: relative;
+                margin-left: .9375rem;
 
-                        &>.title {
-                            position: relative;
-                            bottom: .625rem;
-                            font-size: .8125rem;
+                .search {
+                    width: 2.25rem;
+                    height: 2.125rem;
+
+                    border: .0625rem solid black;
+                    border-color: rgb(204, 204, 204);
+                    border-radius: .5rem;
+
+                    transition: width 0.5s;
+
+                    &::placeholder {
+                        font-size: 0rem;
+                    }
+
+                    &:focus {
+                        width: 11.25rem;
+                        padding: .3125rem;
+                        outline: none;
+                        border: .0625rem solid green;
+
+                        &~.icon {
+                            opacity: 0;
                         }
 
-                        &>.item-contents {
-                            position: absolute;
-                            background-color: #333333;
-
-                            width: 100%;
-
-                            top: 7.5rem;
-                            left: 0;
-                            display: none;
-
-                            &>.contents {
-                                margin: auto;
-                                width: 68.75rem;
-                                padding: 1.25rem 0;
-                                display: flex;
-                                gap: 5rem;
-
-                                &>.contents-list {
-                                    display: flex;
-                                    flex-direction: column;
-                                    padding: .625rem;
-
-                                    &>.contents-title {
-                                        display: inline-block;
-                                        padding-bottom: .625rem;
-                                        font-size: .875rem;
-                                        color: white;
-                                    }
-
-                                    .list {
-                                        padding: .3125rem 0;
-                                        font-size: .75rem;
-                                        color: rgb(153, 153, 153);
-
-                                        a {
-                                            color: inherit;
-                                        }
-
-                                        &:hover {
-                                            color: rgb(102, 153, 0);
-                                        }
-                                    }
-
-                                }
-
-                            }
-
-                            .tip {
-                                margin: auto;
-                                padding: 1.25rem 0;
-                                padding-bottom: 2.5rem;
-
-                                background-image: url(/src/assets/images/main_menu_pattern.jpg);
-
-                                &>.item {
-                                    width: 68.75rem;
-                                    margin: auto;
-
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: .625rem;
-                                    font-size: .75rem;
-
-                                    .tip-title {
-                                        color: #999999;
-                                        font-size: inherit;
-                                    }
-
-                                    .tip-sub {
-                                        color: #669900;
-                                        font-size: inherit;
-                                    }
-                                }
-
-                            }
-
-
-
-
+                        &::placeholder {
+                            font-size: .8rem;
                         }
 
-                        &:hover {
-                            background-color: #333333;
-
-                            .title {
-                                color: #669900;
-                            }
-
-                            .item-contents {
-                                display: block;
-                            }
-
-                        }
                     }
                 }
 
+                .icon {
+                    background-image: url(/src/assets/images/search-icon.png);
+                    position: absolute;
+
+                    width: 1.25rem;
+                    aspect-ratio: 1/1;
+
+                    background-size: cover;
+                    background-position: center;
+
+                    pointer-events: none;
+                    top: .4375rem;
+                    right: .4375rem;
+
+                    transition: opacity 0.5s;
+                }
+
+            }
 
         }
 
+        .main-menu {
+            width: 46.875rem;
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: flex-end;
 
+            .menu{
+                padding: 1.25rem;
+                border-radius: .5rem .5rem 0 0;
 
+                font-family: "Noto Sans KR" sans-serif;
+                font-size: .8125rem;
+                font-weight: normal;
+
+                &:hover{
+                    background-color: #333;
+                    color: rgb(102, 153, 0);
+                }
+
+                &:hover .menu-layout{
+                    display: flex;
+                }
+
+            }
+
+            .menu-layout{
+                position: absolute;
+                width: 100vw;
+
+                left: 0;
+                top: 7.1875rem;
+
+                background-color: rgb(51, 51, 51);
+
+                display: none;
+                flex-direction: column;
+            }
+
+            .menu-list{
+                display: flex;
+                gap: 5rem;
+                color: white;
+                padding: 2.5rem;
+
+                width: 68.75rem;
+
+                margin: 0 auto;
+            }
+
+            .list{
+               display: flex;
+               flex-direction: column;
+               gap: 1.25rem;
+
+               font-size: .875rem;
+               font-weight: 700;
+            }
+
+            .tip-layout{
+                width: 100%;
+                background-image: url(../../assets/images/main_menu_pattern.jpg);
+
+                display: flex;
+                justify-content: center;
+            }
+
+            .tip{
+               display: flex;
+               flex-direction: column;
+               align-items: start;
+
+               width: 68.75rem;
+               gap: 1.25rem;
+
+               font-size: .75rem;
+              
+                
+               padding: 1.875rem 0 2.5rem 0;
+            }
+
+            .tip-title{
+                color: rgb(153, 153, 153);
+                padding-bottom: .3125rem;
+            }
+
+            .tip-sub{
+                color: rgb(102, 153, 0);
+                
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: .9375rem;
+
+                font-size: .75rem;
+                font-weight: normal;
+                color: rgb(153, 153, 153);
+            }
+
+            .link{
+
+                &:hover{
+                    color: rgb(102, 153, 0);
+                }
+            }
+            
+        }
 
 
     }

@@ -1,14 +1,15 @@
-aside {
+#side-bar {
     position: fixed;
-    right: 10px;
-    top: 130px;
+    right: .625rem;
+    top: 8.125rem;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1.25rem;
+  
     z-index: 999;
 
     * {
-        border-radius: 8px;
+        border-radius: .5rem;
     }
 }
